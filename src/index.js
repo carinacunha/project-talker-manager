@@ -18,6 +18,25 @@ app.use(bodyParser.json());
 const HTTP_OK_STATUS = 200;
 const PORT = '3000';
 
+app.get('/talker/search',
+tokenValidation,
+async (req, res) => {
+  const { q } = req.query;
+  const talkers = await readFile();
+  const filterTalker = talkers.filter((elem) => elem.name.includes(q));
+
+  if (filterTalker) {
+    return res.status(200).json(filterTalker);
+  }
+
+  if (!q || q === '') {
+    return res.status(200).json(talkers);
+  } 
+  if (!filterTalker) {
+    return res.status(200).json([]);
+  } 
+  });
+
 app.get('/talker', async (req, res) => {
   const talkers = await readFile();
   if (talkers.length === 0) {
