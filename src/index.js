@@ -1,7 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const readFile = require('./readFile');
-const tokenValidation = require('./middlewares/tokenValidation');
 const emailValidation = require('./middlewares/emailValidation');
 const passwordValidation = require('./middlewares/passwordValidation');
 const generateToken = require('./generateToken');
