@@ -105,7 +105,7 @@ rateValidation,
 
   const index = talkers.findIndex((elem) => elem.id === Number(id));
   talkers[index] = { ...talkers[index], name, age, talk: { watchedAt, rate } };
-  const updateTalkers = JSON.stringify(talkers[index]);
+  const updateTalkers = talkers[index];
   await writeFile(talkers);
   res.status(200).json(updateTalkers);
 });
