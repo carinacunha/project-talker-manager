@@ -1,10 +1,13 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# Talker Manager Project
+
+In this project, a talker registration application was developed in which it is possible to register, view, search, edit and delete information through the development of an API of a CRUD (Create, Read, Update and Delete) of speakers (talkers) some endpoints that read and write to a file using the fs module.
+
+## 🛠 Tools
+
+* Node.js
+* Express.js
+* JavaScript
+* Docker
+* Jest 
+
+**This project was developed during the Web Developer course at Trybe.**
